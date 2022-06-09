@@ -1,0 +1,61 @@
+.width-adjustment {
+  max-width: 1430px;
+  margin: auto;
+}
+.projects-container {
+  background-color: #edefee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.projects-container h2 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 42px;
+}
+.projects-container h2 span {
+  border-bottom: 4px solid white;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 80px;
+}
+
+.projects img {
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 350px;
+}
+.projects h4 {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-size: 21px;
+}
+.project p {
+  font-family: "Gentium Plus", serif;
+  text-align: justify;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.project {
+  border: 2px solid white;
+  font-weight: 600;
+  padding-top: 50px;
+  height: 550px;
+}
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+}

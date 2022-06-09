@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+.flexible-navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 40px;
+}
+.flexible-navbar h2 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 58px;
+}
+.contanct-me p {
+  font-size: 21px;
+  border: 2px solid black;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+.contanct-me a {
+  text-decoration: none;
+  color: black;
+}
+
+.flexible-link {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+  .flexible-navbar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
